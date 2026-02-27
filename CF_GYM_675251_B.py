@@ -1,0 +1,6 @@
+n = int(input())
+a = list(map(int, input().split()))
+l = min(a.index(1), a.index(n))
+r = max(a.index(1), a.index(n))
+ans = max(r-l, r, n-1-l)
+print(ans)
